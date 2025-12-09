@@ -77,7 +77,6 @@ personal/
 private/
 
 # Large Media Files (already in repo, but ignore future large files)
-*.mp4
 *.mov
 *.avi
 *.large
