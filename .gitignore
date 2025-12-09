@@ -1,0 +1,92 @@
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# Node Modules (if using build tools in future)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment Variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Build Output (if adding build process)
+dist/
+build/
+out/
+
+# Logs
+logs/
+*.log
+
+# Temporary Files
+tmp/
+temp/
+*.tmp
+
+# Backup Files
+*.bak
+*.backup
+*_backup.*
+
+# Package Manager Lock Files (optional - uncomment if needed)
+# package-lock.json
+# yarn.lock
+
+# Python (if adding backend later)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Coverage and Testing
+coverage/
+.nyc_output/
+.jest/
+
+# Personal/Private Files
+drafts/
+notes.txt
+TODO.txt
+personal/
+private/
+
+# Large Media Files (already in repo, but ignore future large files)
+*.mp4
+*.mov
+*.avi
+*.large
+
+# MacOS
+*.DS_Store
+
+# Windows
+*.lnk
+
+# Linux
+*~

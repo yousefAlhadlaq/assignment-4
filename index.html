@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Yousef Alhadlaq - Professional Portfolio | Cybersecurity & Data Science Specialist">
+  <meta name="keywords" content="Cybersecurity, Data Science, Machine Learning, Portfolio, KFUPM">
+  <meta name="author" content="Yousef Alhadlaq">
+  <title>Yousef Alhadlaq | Professional Portfolio</title>
+  <!-- Preload critical CSS -->
+  <link rel="preload" href="css/styles.css" as="style">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Preload critical image -->
+  <link rel="preload" href="assets/images/my_personal_photo.JPG" as="image" fetchpriority="high">
+</head>
+<body>
+  <!-- Header with navigation -->
+  <header id="header">
+    <nav class="nav-container">
+      <div class="nav-brand">
+        <img src="assets/images/KFUPM_LOGO.jpg" alt="KFUPM Logo" class="university-logo" width="45" height="45" decoding="async">
+        <span class="logo">YA</span>
+        <span class="brand-name">Yousef Alhadlaq</span>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#github" class="nav-link">GitHub</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">
+          <span class="theme-icon">🌓</span>
+        </button>
+        <button id="mobileMenuToggle" class="mobile-menu-btn" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#github" class="mobile-nav-link">GitHub</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Visit Timer Banner -->
+  <div class="timer-banner" id="timerBanner">
+    <span id="visitTimer">Time on site: 00:00</span>
+    <span id="welcomeBack"></span>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Yousef Alhadlaq</span>
+        </h1>
+        <p class="hero-subtitle" id="dynamicGreeting">Welcome to my portfolio</p>
+        <p class="hero-description">
+          Computer Science Student | Cybersecurity Enthusiast | Data Science Explorer
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="assets/CV.pdf" class="btn btn-secondary" download>
+            <span class="btn-icon">📄</span> Download CV
+          </a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <a href="#about" aria-label="Scroll down">
+          <span class="scroll-arrow">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-image">
+            <img src="assets/images/my_personal_photo.JPG" alt="Yousef Alhadlaq" class="profile-photo" fetchpriority="high" decoding="async" width="320" height="400">
+          </div>
+          <div class="about-text">
+            <p class="lead">Turning complex risks into intelligent solutions.</p>
+            <p>
+              Hi, I'm Yousef Alhadlaq, a Computer Science student at KFUPM with a strong
+              passion for exploring new technologies and experimenting with creative solutions.
+            </p>
+            <p>
+              I'm especially interested in <strong>cybersecurity</strong> and <strong>data science</strong>,
+              where I enjoy tackling complex challenges and building adaptive systems. I'm constantly
+              learning and applying cutting-edge techniques to solve real-world problems.
+            </p>
+
+            <!-- User Preference Section -->
+            <div class="user-preference">
+              <h3>What are you interested in?</h3>
+              <div class="preference-buttons">
+                <button class="pref-btn" data-level="all">All Projects</button>
+                <button class="pref-btn" data-level="beginner">Beginner Level</button>
+                <button class="pref-btn" data-level="intermediate">Intermediate Level</button>
+                <button class="pref-btn" data-level="advanced">Advanced Level</button>
+              </div>
+              <p class="preference-message" id="preferenceMessage"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section (NEW) -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <p class="section-description">Technologies and tools I work with</p>
+
+        <div class="skills-grid">
+          <!-- Cybersecurity Skills -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <span class="skill-icon">🔒</span> Cybersecurity
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Network Security</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Penetration Testing</span>
+                  <span class="skill-percent">75%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="75"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Security Auditing</span>
+                  <span class="skill-percent">70%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="70"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Science Skills -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <span class="skill-icon">📊</span> Data Science
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Machine Learning</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Data Visualization</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development Skills -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <span class="skill-icon">💻</span> Web Development
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">HTML/CSS</span>
+                  <span class="skill-percent">95%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="95"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="85"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & Technologies -->
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <span class="skill-icon">🛠️</span> Tools & Technologies
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Git & GitHub</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="88"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">VS Code</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="92"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">API Integration</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-progress="80"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section with Filtering and Sorting -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-description">Explore my work in cybersecurity, data science, and web development</p>
+
+        <!-- Project Controls -->
+        <div class="project-controls">
+          <div class="filter-group">
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter" class="filter-select">
+              <option value="all">All Projects</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="data-science">Data Science</option>
+              <option value="machine-learning">Machine Learning</option>
+              <option value="web-dev">Web Development</option>
+            </select>
+          </div>
+
+          <div class="sort-group">
+            <label for="sortProjects">Sort by:</label>
+            <select id="sortProjects" class="sort-select">
+              <option value="date-desc">Newest First</option>
+              <option value="date-asc">Oldest First</option>
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Projects will be dynamically loaded here -->
+        </div>
+
+        <p class="no-projects" id="noProjects" style="display: none;">
+          No projects match your current filters.
+        </p>
+      </div>
+    </section>
+
+    <!-- GitHub Repositories Section -->
+    <section id="github" class="github-section section">
+      <div class="container">
+        <h2 class="section-title">My GitHub Repositories</h2>
+        <p class="section-description">Live data from my GitHub account</p>
+
+        <div class="github-stats" id="githubStats">
+          <div class="stat-card">
+            <span class="stat-icon">📦</span>
+            <span class="stat-value" id="repoCount">-</span>
+            <span class="stat-label">Repositories</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">⭐</span>
+            <span class="stat-value" id="totalStars">-</span>
+            <span class="stat-label">Total Stars</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">🔱</span>
+            <span class="stat-value" id="totalForks">-</span>
+            <span class="stat-label">Total Forks</span>
+          </div>
+        </div>
+
+        <div class="github-repos" id="githubRepos">
+          <div class="loading">Loading repositories...</div>
+        </div>
+
+        <div class="api-error" id="apiError" style="display: none;">
+          <p>Unable to load GitHub repositories at this time. Please try again later.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-description">Have a question or want to work together?</p>
+
+        <div class="contact-content">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name *</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="2"
+                placeholder="Your full name"
+              >
+              <span class="validation-icon" id="nameValidation"></span>
+              <span class="error-message" id="nameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="your.email@example.com"
+              >
+              <span class="validation-icon" id="emailValidation"></span>
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject *</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                minlength="5"
+                placeholder="What's this about?"
+              >
+              <span class="validation-icon" id="subjectValidation"></span>
+              <span class="error-message" id="subjectError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                minlength="10"
+                maxlength="1000"
+                rows="6"
+                placeholder="Your message here..."
+              ></textarea>
+              <div class="message-meta">
+                <span class="validation-icon" id="messageValidation"></span>
+                <span class="char-counter" id="charCounter">0 / 1000</span>
+              </div>
+              <span class="error-message" id="messageError"></span>
+            </div>
+
+            <div class="form-status">
+              <span class="draft-indicator" id="draftIndicator"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+              Send Message
+            </button>
+          </form>
+
+          <!-- Success Message -->
+          <div class="success-card" id="successMessage">
+            <div class="success-icon">✓</div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you soon.</p>
+            <button class="btn btn-secondary" id="sendAnotherBtn">Send Another Message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p>&copy; 2024 Yousef Alhadlaq. Built with passion for cybersecurity and data science.</p>
+        </div>
+        <div class="footer-right">
+          <div class="social-links">
+            <a href="https://github.com/yousefalhadlaq" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              GitHub
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <span>↑</span>
+  </button>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
